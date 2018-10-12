@@ -134,9 +134,14 @@ body *{
 	width: 32%;
 	height: 80%;
 	display: inline-block;
-	text-align: center;	
+	text-align: center;
+	border-radius: 10px;	
 }
 
+/*.cont-32:hover{
+	transform: scale(1.2);
+}
+*/
 .cont-32 h4{
 	padding: 20px 0 20px 0;
 	text-transform: uppercase;
@@ -149,16 +154,34 @@ body *{
 	transform: translate(-9px, 75px);
 }
 
+.elementary:hover{
+	transform: translate(-9px, 75px) scale(1.05);
+	transition: 0.5s;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 .highschool{
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 75px);
 }
 
+.highschool:hover{
+	transform: translate(-50%, 75px) scale(1.05);
+	transition: 0.5s;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 .college{
 	position: absolute;
 	right: 19px;
 	transform: translate(9px, 75px);
+}
+
+.college:hover{
+	transform: translate(9px, 75px) scale(1.05);
+	transition: 0.5s;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*Skills*/
@@ -182,7 +205,7 @@ body *{
 	background-color: rgba(20, 20, 255, 0.2);
 	border-left: 1px white solid;
 	border-bottom: 1px white solid;
-	position: absolute;
+	position: relative;
 	left: 50%;
 	top: 15%;
 	transform: translate(-50%, 20%) rotate(-30deg) skew(25deg) scale(0.5);
@@ -315,29 +338,34 @@ body *{
 
 /*porfolio preview*/
 
-.portfolio-preview .info{
-	width: 300px;
-	height: 500px;
+.portfolio-preview .content h3{
+	text-transform: uppercase;
+	font-size: 26px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 10px);
+}
+
+.portfolio-preview .content .port-desc{
+	width: 30%;
+	height: 400px;
+	position: absolute;
+	left: 1%;
+	top: 80px;
 	background-color: blue;
-	position: absolute;
-	left: 3%;
-	top: 30px;
 }
 
-.portfolio-preview .slideshow{
+.portfolio-preview .content .slideshow{
 	width: 65%;
-	height: 90%;
-	border-radius: 10px;
+	height: 400px;
 	position: absolute;
-	left: 33%;
-	top: 30px;
-	transform: (-33%, 30px);
+	right: 2%;
+	top: 80px;
+	background-color: red;
 }
 
-.portfolio-preview .slideshow .slides{
+.portfolio-preview .content .slideshow .slides{
+	position: absolute;
 	width: 100%;
 	height: 100%;
-	position: absolute;
-	border-radius: 10px;
-	display: none;
 }
