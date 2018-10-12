@@ -4,6 +4,9 @@
 	<title>Resume</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/resume-styles.css">
+
+
+
 </head>
 <body>
 	<div class="container">
@@ -106,21 +109,83 @@
 				
 				<div class="port-desc">
 					<h4>My Portfolio</h4>
-					<p>Includes some of my school projects.</p>
+					<p>Includes some of my school projects and projects that I made by myself.</p>
+					<hr>
 					<p>Some of the applications and console applications are created out of curiousity and to past time whenever I am bored and has a lot of free time.</p>
-
+					<hr>
+					<p>Projects created are based on web, windows application using java, and console applications.</p>
+					<hr>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
 					<a href="portfolio.html">Click here to see detailed info about my works.</a>
 				</div>
 
 				<div class="slideshow">
-					<img class="slides" src="img/payroll/main form.png">
+					<!-- <img class="slides" src="img/payroll/main form.png">
 					<img class="slides" src="img/payroll/employee management(view).png">
 					<img class="slides" src="img/payroll/employee management(add).png">
 					<img class="slides" src="img/payroll/edit employee dialog.png">
 					<img class="slides" src="img/payroll/Cash advance dialog.png">
-					<img class="slides" src="img/payroll/Payroll Form.png">
+					<img class="slides" src="img/payroll/Payroll Form.png"> -->
+					<div class="mySlides fade">
+  						<div class="numbertext">1 / 1</div>
+  						<img src="img/payroll/main form.png" style="width:100%">
+  						<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+  						<div class="numbertext">1 / 2</div>
+  						<img src="img/payroll/employee management(view).png" style="width:100%">
+  						<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+  						<div class="numbertext">1 / 3</div>
+  						<img src="img/payroll/employee management(add).png" style="width:100%">
+  						<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+  						<div class="numbertext">1 / 4</div>
+  						<img src="img/payroll/edit employee dialog.png" style="width:100%">
+  						<div class="text"></div>
+					</div>
+					<br>
+
+					<div style="text-align:center">
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					</div>
 				</div>
 
+					<script type="text/javascript">
+						var slideIndex = 0;
+						showSlides();
+
+						function showSlides() {
+						    var i;
+						    var slides = document.getElementsByClassName("mySlides");
+						    var dots = document.getElementsByClassName("dot");
+						    for (i = 0; i < slides.length; i++) {
+						       slides[i].style.display = "none";  
+						    }
+						    slideIndex++;
+						    if (slideIndex > slides.length) {slideIndex = 1}    
+						    for (i = 0; i < dots.length; i++) {
+						        dots[i].className = dots[i].className.replace(" active", "");
+						    }
+						    // alert(slides.length);
+						    slides[slideIndex-1].style.display = "block";  
+						    dots[slideIndex-1].className += " active";
+						    setTimeout(showSlides, 4000);
+						}
+				</script>
 			</div>
 		</div>
 	</div>
