@@ -205,7 +205,7 @@ body *{
 	background-color: rgba(20, 20, 255, 0.2);
 	border-left: 1px white solid;
 	border-bottom: 1px white solid;
-	position: relative;
+	position: absolute;
 	left: 50%;
 	top: 15%;
 	transform: translate(-50%, 20%) rotate(-30deg) skew(25deg) scale(0.5);
@@ -352,7 +352,10 @@ body *{
 	position: absolute;
 	left: 1%;
 	top: 80px;
-	background-color: blue;
+}
+
+.portfolio-preview .content .port-desc * {
+	text-indent: 20px;
 }
 
 .portfolio-preview .content .slideshow{
@@ -361,11 +364,70 @@ body *{
 	position: absolute;
 	right: 2%;
 	top: 80px;
-	background-color: red;
+	/*background-color: red;*/
 }
 
 .portfolio-preview .content .slideshow .slides{
 	position: absolute;
 	width: 100%;
 	height: 100%;
+}
+
+.mySlides {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.portfolio-preview .content .slideshow img {
+	width: 100%;
+	height: 100%;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
