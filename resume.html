@@ -9,8 +9,10 @@
 
 </head>
 <body>
+	<div class="floating-button"><a href="index.html" style="color:white">HOME</a></div>
 	<div class="container">
-		<div class="section personal-info">
+		<div class="section personal-info"
+		>
 			<div class="content">
 				<img src="img/picture.jpg">
 				<h3>Mark Luis Guerrero Sablan</h3>
@@ -85,7 +87,7 @@
 				<h4 class="H">HTML</h4>
 				<h4 class="S">CSS</h4>
 				<h4 class="T">JavaScript</h4>
-				<h4 class="M">MySQL</h4>
+				<h4 class="M">SQL</h4>
 
 				<div class="chart">
 
@@ -125,33 +127,28 @@
 				</div>
 
 				<div class="slideshow">
-					<!-- <img class="slides" src="img/payroll/main form.png">
-					<img class="slides" src="img/payroll/employee management(view).png">
-					<img class="slides" src="img/payroll/employee management(add).png">
-					<img class="slides" src="img/payroll/edit employee dialog.png">
-					<img class="slides" src="img/payroll/Cash advance dialog.png">
-					<img class="slides" src="img/payroll/Payroll Form.png"> -->
-					<div class="mySlides fade">
-  						<div class="numbertext">1 / 1</div>
-  						<img src="./img/payroll/mainform.png" style="width:100%">
-  						<div class="text"></div>
-					</div>
-
-					<div class="mySlides fade">
-  						<div class="numbertext">1 / 2</div>
-  						<img src="./img/payroll/employeemanagement(view).png" style="width:100%">
-  						<div class="text"></div>
-					</div>
-
-					<div class="mySlides fade">
-  						<div class="numbertext">1 / 3</div>
-  						<img src="./img/payroll/employeemanagement(add).png" style="width:100%">
-  						<div class="text"></div>
-					</div>
 
 					<div class="mySlides fade">
   						<div class="numbertext">1 / 4</div>
-  						<img src="./img/payroll/editemployeedialog.png" style="width:100%">
+  						<img src="https://raw.githubusercontent.com/MarkSablan/webprog/master/img/payroll/mainform.PNG" style="width:100%">
+  						<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+  						<div class="numbertext">2 / 4</div>
+  						<img src="https://raw.githubusercontent.com/MarkSablan/webprog/master/img/payroll/employeemanagement(view).PNG" style="width:100%">
+  						<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+  						<div class="numbertext">3 / 4</div>
+  						<img src="https://raw.githubusercontent.com/MarkSablan/webprog/master/img/payroll/employeemanagement(add).PNG" style="width:100%">
+  						<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+  						<div class="numbertext">4 / 4</div>
+  						<img src="https://raw.githubusercontent.com/MarkSablan/webprog/master/img/payroll/editemployeedialog.PNG" style="width:100%">
   						<div class="text"></div>
 					</div>
 					<br>
@@ -164,26 +161,24 @@
 					</div>
 				</div>
 
-					<script type="text/javascript">
-						var slideIndex = 0;
-						showSlides();
-
+				<script type="text/javascript" url="/js/resume.js">
+					var slideIndex = 0;
+					showSlides();
 						function showSlides() {
-						    var i;
-						    var slides = document.getElementsByClassName("mySlides");
-						    var dots = document.getElementsByClassName("dot");
-						    for (i = 0; i < slides.length; i++) {
-						       slides[i].style.display = "none";  
-						    }
-						    slideIndex++;
-						    if (slideIndex > slides.length) {slideIndex = 1}    
-						    for (i = 0; i < dots.length; i++) {
-						        dots[i].className = dots[i].className.replace(" active", "");
-						    }
-						    // alert(slides.length);
-						    slides[slideIndex-1].style.display = "block";  
-						    dots[slideIndex-1].className += " active";
-						    setTimeout(showSlides, 4000);
+							var i;
+							var slides = document.getElementsByClassName("mySlides");
+							var dots = document.getElementsByClassName("dot");
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";  
+							}
+							slideIndex++;
+							if (slideIndex > slides.length) {slideIndex = 1}    
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex-1].style.display = "block";  
+							dots[slideIndex-1].className += " active";
+							setTimeout(showSlides, 4000);
 						}
 				</script>
 			</div>
