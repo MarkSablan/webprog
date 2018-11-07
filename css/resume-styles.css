@@ -10,12 +10,12 @@ body *{
 }
 
 /*.container .section{
-	position: sticky;
+	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 100vh;
-}*/
-
+	height: 110vh;
+}
+*/
 .personal-info{
 	width: 100%;
 	height: 110vh;
@@ -430,4 +430,24 @@ body *{
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+.floating-button{
+	width: 100px;
+	height: 100px;
+	background-color: rgba(0, 0, 50, 0.6);
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.floating-button a{
+	font-family: Verdana;
+	font-size: 20px;
+	position: relative;
+	left: 20%;
+	top: 35px;
+	transform: translate(-50%, 0);
+	text-decoration: none;
 }
